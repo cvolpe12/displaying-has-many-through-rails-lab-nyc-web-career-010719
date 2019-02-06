@@ -1,0 +1,3 @@
+<h3><%= @appointment.appt %></h3><br>
+Doctor: <%= link_to @appointment.doctor.name, doctor_path(@appointment.doctor.id)%><br>
+Patient: <%= link_to @appointment.patient.name, patient_path(@appointment.patient.id)%>
